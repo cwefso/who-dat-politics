@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Inter, Sen } from "next/font/google";
+import House from "@/components/House";
+import Senate from "@/components/Senate";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +44,8 @@ export default function Home() {
           height={37}
           priority
         />
+        <House />
+        <Senate />
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
